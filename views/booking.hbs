@@ -1,0 +1,59 @@
+<nav class="navbar navbar-dark bg-dark">
+	<div class="container-fluid">
+    <a class="navbar-brand btn" href="/">Home</a>
+		<a class="navbar-brand btn" href="#contact">Contact</a>
+  </div>
+</nav>
+<div class="container mt-3">
+	<h1>Booking form</h1>
+	<form action="/booking" method="post">
+		<div class="mb-3">
+			<label for="exampleFormControlInput1" class="form-label m-3"
+				>Name</label>
+			<input name="name" type="text" class="form-control" required placeholder="Full name"/>
+		</div>
+		<div class="mb-3">
+			<label for="exampleFormControlInput1" class="form-label m-3"
+				>Email address</label>
+			<input name="email" type="email" class="form-control" placeholder="Email address"/>
+		</div>
+		<label class="form-label m-3" for="exampleFormControlInput1">Service</label>
+		<select class="form-control" name="service">
+			<option name="service" value="GentsHaircut">Gents Haircut</option>
+			<option name="service" value="KidsCut">Kids Cut</option>
+			<option name="service" value="Fade1/2andBelow">Fade 1/2 and Below</option>
+			<option name="service" value="OAP">OAP</option>
+			<option name="service" value="ScissorCut">Scissor Cut</option>
+			<option name="service" value="BeardTrim">Beard Trim</option>
+
+
+		</select>
+		<div class="error mt-3">
+			{{error}}
+		</div>
+		<label class="form-label m-3" for="exampleFormControlInput1">Choose a time for next Sunday</label>
+		<select class="form-control" name="time">
+			<option value="10.00">10.00</option>
+			<option value="10.30">10.30</option>
+			<option value="11.00">11.00</option>
+			<option value="11.30">11.30</option>
+			<option value="12.00">12.00</option>
+			<option value="12.30">12.30</option>
+			<option value="13.00">13.00</option>
+			<option value="13.30">13.30</option>
+			<option value="14.00">14.00</option>
+			<option value="14.30">14.30</option>
+			<option value="15.00">15.00</option>
+			<option value="15.30">15.30</option>
+			<option value="16.00">16.00</option>
+			<option value="16.30">16.30</option>
+			<option value="17.00">17.00</option>
+
+		</select>
+		<button type="submit" class="btn btn-outline-secondary m-3">Book Now</button>
+	</form>
+</div>
+<!-- <script type="text/javascript" src="/js/script.js" defer></script> -->
+<footer>
+{{>footer}}
+ </footer>

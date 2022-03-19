@@ -1,0 +1,101 @@
+.home {
+  display: flex;
+  flex-direction: row;
+  margin: 10px;
+}
+
+.main-photo {
+  width: 28vw;
+  height: 300px;
+  margin: 10px;
+}
+.logo-photo {
+  width: 50vw;
+  height: 400px;
+  animation-name: rotate;
+  animation-duration: 0.7s;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.contact-container {
+  width: 100vw;
+  color: white;
+  background-color: black;
+  text-align: center;
+  padding: 20px;
+}
+.social-media {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.icons {
+  margin: 10px;
+}
+.services {
+  text-align: center;
+  font-family: 'cabin', sans-sans-serif;
+  font-size: 2rem;
+}
+ul {
+  list-style-type: none;
+}
+.profile {
+  background-image: url(../images/profile.jpeg);
+  background-size: cover;
+  background-position: center;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  margin: 10px;
+  margin-left: 45%;
+}
+.about {
+  text-align: center;
+  font-family: 'cabin', sans-sans-serif;
+  align-items: center;
+}
+.description {
+  justify-content: center;
+  font-family: 'cabin', sans-sans-serif;
+  font-size: 20px;
+}
+h1 {
+  font-weight: bold;
+  text-decoration: underline;
+}
+.page {
+  background-image: linear-gradient(#ffffff, #c0c0c0, #ffffff);
+}
+.booking-button {
+  text-align: center;
+}
+.thankyou,
+.error {
+  text-align: center;
+  font-family: 'cabin', sans-sans-serif;
+  box-shadow: 1px 5px 20px rgba(220, 220, 220, 0.5);
+  font-size: 25px;
+}
+.appointments {
+  width: 90vw;
+  height: 8vh;
+  box-shadow: 1px 5px 20px rgba(220, 220, 220, 0.5);
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  font-family: 'cabin', sans-sans-serif;
+}
+.time {
+  text-decoration: underline;
+}
+.confirmation {
+  font-family: 'cabin', sans-sans-serif;
+  font-size: 30px;
+}

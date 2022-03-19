@@ -1,0 +1,23 @@
+<div class="container-flex m-3">
+	<form action="/" method="get">
+		<button  class="btn btn-lg btn-outline-secondary m-4">
+				Back</button></form>
+	<h2 class="booking mb-4">Current Bookings</h2>
+
+	{{#each bookings as |booking|}}
+    <div class="booking mb-3 appointments">
+      <div class="p-1 border bg-light appointments">
+
+				<h3 class="m-3">{{booking.name}}</h3>
+				<h5 class="m-3">{{booking.email}}</h5>
+				<h3 class="m-3">{{booking.service}}</h3>
+				<h3 class="m-3 time">{{booking.time}}</h3>
+				<form action="./appointments/{{booking._id}}?_method=delete" method="post">
+						<button class="btn btn-sm btn-danger m-3">
+							Cancel Booking
+						</button>
+					</form>
+			</div>
+      </div>
+
+		{{/each}}

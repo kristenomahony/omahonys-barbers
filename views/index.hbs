@@ -1,0 +1,67 @@
+<nav>
+  {{>nav}}
+</nav>
+<div class="page">
+  <div class="container home">
+    <img
+      src="../images/outside.jpeg"
+      class="rounded float-start main-photo"
+      alt="..."
+    />
+    <img
+      src="../images/logo.jpg"
+      class="rounded mx-auto d-block logo-photo"
+      alt="..."
+    />
+    <img
+      src="../images/inside.jpeg"
+      class="rounded float-end main-photo"
+      alt="..."
+    />
+  </div>
+  <div class="container services">
+    <h1>Services</h1>
+    <h2>Now taking bookings for Sundays 10am - 5 pm only</h2>
+    <ul>
+      <li>Gents Cut 20 mins €12</li>
+      <li>Kids Cut 20 mins €10</li>
+      <li>Fade 1/2 and Below 30 mins €15</li>
+      <li>OAP 20 mins €10</li>
+      <li>Scissor cut 30 mins €14</li>
+      <li>Beard trim 10 mins €5</li>
+      <h3 class="kids mt-3">Kids Cut is available for boys AND girls</h3>
+    </ul>
+  </div>
+  <div class="booking-button m-5">
+    <a class="btn btn-lg btn-outline-dark" href="booking">Book now</a>
+  </div>
+  <div class="container about">
+    <h2>About</h2>
+
+    <div class="profile"></div>
+    <div class="description">
+      <div>
+        <p>
+          Hi my name is Katie O'Mahony Malone. I have been living here in
+          Shercock my whole life, my family own a pub, O'Mahony's, here in the
+          heart of town, it was built by my great-grandfather in the 1900's. In
+          July 2020 I opened The Barber's at O'Mahony's in the front of the
+          building. I have a background in Hairdressing but in 2018 I upgraded
+          my skills to focus on Barbering. And I havent looked back since!
+        </p>
+      </div>
+    </div>
+  </div>
+  {{#if user}}
+  <div class="login-button m-5">
+    <a class="btn btn-outline-dark" href="auth/logout">Admin Logout</a>
+  </div>
+  {{else}}
+  <div class="login-button m-5">
+    <a class="btn btn-outline-dark" href="auth/login">Admin Login</a>
+  </div>
+  {{/if}}
+</div>
+<footer>
+  {{>footer}}
+</footer>
